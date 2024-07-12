@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>About Utah</title>
+    <link rel="stylesheet" href="styles/state.css">
 </head>
-<body>
 
+<!--
+Resources:
+ - https://www.utah.gov/about/state-symbols.html
+ - https://en.wikipedia.org/wiki/Utah
+ - https://www.w3schools.com/howto/default.asp (Used for the more complicated design choices)
+-->
+
+<body>
+<header>
+    <img src="images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
+    <h1 id="state-name">Utah</h1>
+    <h1 id="city-name">Salt Lake City</h1>
+    <h2 id="state-motto"><i>"Industry"</i></h2>
+    <h2 id="city-quote"><i>"The Crossroads of the West"</i></h2>
+</header>
+<nav>
+    <a href="../index.html">Utah</a>
+    <a href="./saltLakeCity.html">Salt Lake City</a>
+    <div id="subnav">
+        <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
+        <button class="subnavbtn">Cities  &or;</button>
+        <div id="subnav-content">
+            <a href="./ogden.html">Ogden</a>
+            <a href="./provo.html"></a>
+        </div>
+    </div>
+</nav>
+<main>
+    <img src="" alt="">
+    <!--Using W3Schools Full Page Image How-To for making a full screen background image.
+        https://www.w3schools.com/howto/howto_css_full_page.asp
+    -->
+
+</main>
+<footer>
+    <form>
+        <input type="text" id="fname" placeholder="First Name" required>
+        <input type="text" id="lname" placeholder="Last Name" required>
+        <input type="email" id="email-initial" placeholder="Email" required>
+        <input type="email" id="email-confirm" placeholder="Confirm Email" required>
+        <textarea id="question" rows="4" cols="35" placeholder="Ask a question..." required></textarea>
+    </form>
+    <p id="copyright"></p><!--Add copyright information-->
+    <span id="social-media"> <!--Links to Utah Governments social media pages-->
+        <a href=""></a><!--Facebook-->
+        <a href=""></a><!--Instagram-->
+        <a href=""></a><!--X(Twitter)-->
+    </span>
+</footer>
 </body>
 </html>
