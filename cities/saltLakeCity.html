@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>About Utah</title>
-    <link rel="stylesheet" href="styles/state.css">
+    <link rel="stylesheet" href="../styles/city.css">
+    <link rel="stylesheet" href="../styles/same.css">
+    <script src="../scripts/form.js"></script>
 </head>
 
 <!--
@@ -15,7 +17,7 @@ Resources:
 
 <body>
 <header>
-    <img src="images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
+    <img src="../images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
     <h1 id="state-name">Utah</h1>
     <h1 id="city-name">Salt Lake City</h1>
     <h2 id="state-motto"><i>"Industry"</i></h2>
@@ -29,7 +31,7 @@ Resources:
         <button class="subnavbtn">Cities  &or;</button>
         <div id="subnav-content">
             <a href="./ogden.html">Ogden</a>
-            <a href="./provo.html"></a>
+            <a href="./provo.html">Provo</a>
         </div>
     </div>
 </nav>
@@ -41,18 +43,20 @@ Resources:
 
 </main>
 <footer>
-    <form>
+    <form onsubmit="confirmEmail()">
         <input type="text" id="fname" placeholder="First Name" required>
         <input type="text" id="lname" placeholder="Last Name" required>
         <input type="email" id="email-initial" placeholder="Email" required>
         <input type="email" id="email-confirm" placeholder="Confirm Email" required>
         <textarea id="question" rows="4" cols="35" placeholder="Ask a question..." required></textarea>
+        <input type="submit">
     </form>
-    <p id="copyright"></p><!--Add copyright information-->
+    <p id="copyright">&copy;2024 Bradley Hunter</p><!--Add copyright information-->
+    <p id="formMsg" style="display: none"></p>
     <span id="social-media"> <!--Links to Utah Governments social media pages-->
-        <a href=""></a><!--Facebook-->
-        <a href=""></a><!--Instagram-->
-        <a href=""></a><!--X(Twitter)-->
+        <a href="https://www.instagram.com/utahgov/" target="_blank" title="Utah State Government Facebook Page"><img class="logo" src="../images/facebook.png" alt="Facebook Logo"></a><!--Facebook-->
+        <a href="https://www.facebook.com/utahgov" target="_blank" title="Utah State Government Instagram Page"><img class="logo" src="../images/instagram.png" alt="Instagram Logo"></a><!--Instagram-->
+        <a href="https://x.com/i/lists/2157345" target="_blank" title="Utah State Government X Page"><img class="logo" src="../images/x(twitter).png" alt="X(Twitter) Logo"></a><!--X(Twitter)-->
     </span>
 </footer>
 </body>
