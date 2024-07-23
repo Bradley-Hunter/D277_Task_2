@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Utah</title>
+    <title>Provo, Utah</title>
     <link rel="stylesheet" href="../styles/city.css">
     <link rel="stylesheet" href="../styles/same.css">
     <script src="../scripts/form.js"></script>
@@ -15,31 +15,52 @@ Resources:
  - https://www.w3schools.com/howto/default.asp (Used for the more complicated design choices)
 -->
 
-<body>
+<body id="bg_Provo" class="bg">
 <header>
-    <img src="../images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
-    <h1 id="state-name">Utah</h1>
-    <h1 id="city-name">Provo</h1>
-    <h2 id="state-motto"><i>"Industry"</i></h2>
-    <h2 id="city-quote"><i>"Welcome Home"</i></h2>
-</header>
-<nav>
-    <a href="../index.html">Utah</a>
-    <a href="./saltLakeCity.html">Salt Lake City</a>
-    <div id="subnav">
-        <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
-        <button class="subnavbtn">Cities  &or;</button>
-        <div id="subnav-content">
-            <a href="./ogden.html">Ogden</a>
-            <a href="./provo.html">Provo</a>
-        </div>
+    <div>
+        <img src="../images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
+        <h1 class="title" id="state-name">Utah</h1>
+        <h1 class="title" id="city-name">Provo</h1>
+        <img id="city-flag" src="../images/Provo_Flag.png" alt="Provo City Flag">
+        <h2 id="state-motto"><i>"Industry"</i></h2>
+        <h2 id="city-quote"><i>"Welcome Home"</i></h2>
     </div>
-</nav>
+</header>
+<div id="center-line">
+    <h1>|</h1>
+</div>
 <main>
-    <img src="" alt="">
+    <nav>
+        <a href="../index.html">Utah</a>
+        <a href="./saltLakeCity.html">Salt Lake City</a>
+        <div id="dropdown">
+            <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
+            <button class="dropbtn">Cities</button>
+            <div id="dropdown-content">
+                <a href="./ogden.html">Ogden</a>
+                <a href="./provo.html">Provo</a>
+            </div>
+        </div>
+    </nav>
+
     <!--Using W3Schools Full Page Image How-To for making a full screen background image.
         https://www.w3schools.com/howto/howto_css_full_page.asp
     -->
+
+    <section>
+        <h3>About Utah</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non. Consequat nisl vel pretium lectus quam id leo in. A iaculis at erat pellentesque adipiscing commodo elit at. Tellus pellentesque eu tincidunt tortor aliquam nulla. In est ante in nibh mauris cursus mattis. Vitae semper quis lectus nulla at. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Nullam non nisi est sit amet. Varius morbi enim nunc faucibus a pellentesque sit amet. Sed arcu non odio euismod lacinia at quis risus sed. Elementum integer enim neque volutpat ac tincidunt vitae. Enim sed faucibus turpis in eu mi bibendum. Nisl pretium fusce id velit ut tortor pretium viverra. Imperdiet dui accumsan sit amet nulla facilisi.</p>
+    </section>
+    <aside>
+        <h3>Facts</h3>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </aside>
 
 </main>
 <footer>

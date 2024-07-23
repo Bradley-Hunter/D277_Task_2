@@ -1,0 +1,20 @@
+header div {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    height: 100px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.motto {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    width: 115px;
+}

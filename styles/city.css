@@ -1,0 +1,49 @@
+header div {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    height: 100px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+#bg_SLC {
+    background-image: url("../images/SLC_Skyline.jpg");
+}
+
+#bg_Provo {
+    background-image: url("../images/Downtown_Provo.jpg");
+}
+
+#bg_Ogden {
+    background-image: url("../images/Ogden_Sign.jpg");
+}
+
+.bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#state-name {
+    grid-column: 2/3;
+}
+#city-flag {
+    grid-column: 4/5;
+}
+
+.title {
+    justify-self: center;
+}
+
+#city-quote {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+}

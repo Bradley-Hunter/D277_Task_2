@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Utah</title>
+    <title>Utah</title>
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/same.css">
     <script src="scripts/form.js"></script>
@@ -17,23 +17,28 @@ Resources:
 
 <body>
 <header>
-    <img src="images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
-    <h1>Utah</h1>
-    <h2><i>"Industry"</i></h2>
-</header>
-<nav>
-    <a href="#">Utah</a>
-    <a href="cities/saltLakeCity.html">Salt Lake City</a>
-    <div id="subnav">
-        <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
-        <button class="subnavbtn">Cities  &or;</button>
-        <div id="subnav-content">
-            <a href="cities/ogden.html">Ogden</a>
-            <a href="cities/provo.html">Provo</a>
-        </div>
+    <div>
+        <img src="images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
+        <h1 class="title">Utah</h1>
+        <h2 id="state-motto"><i>"Industry"</i></h2>
     </div>
-</nav>
+</header>
+<div id="center-line">
+    <h1>|</h1>
+</div>
 <main>
+    <nav>
+        <a href="#">Utah</a>
+        <a href="cities/saltLakeCity.html">Salt Lake<br>City</a>
+        <div id="dropdown">
+            <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
+            <button class="dropbtn">Cities</button>
+            <div id="dropdown-content">
+                <a href="cities/ogden.html">Ogden</a>
+                <a href="cities/provo.html">Provo</a>
+            </div>
+        </div>
+    </nav>
     <div class="slideshow-container">
         <!--Using W3Schools Slideshow & Full Page Image How-Tos for making a background slideshow.
             https://www.w3schools.com/howto/howto_js_slideshow.asp
