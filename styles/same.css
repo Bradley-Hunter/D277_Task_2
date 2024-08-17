@@ -102,24 +102,21 @@ nav a:hover {
     background: #e0e0e0;
 }
 
-main section {
+section {
     width: 600px;
-    margin: 30px auto;
+    margin: 30px 0 30px auto;
     background: #fedd5a;
     border: 2px solid black;
     padding: 5px;
+
 }
-main aside {
+aside {
     padding: 5px;
+    margin: 30px auto auto 30px;
     width: 250px;
-    margin: 30px auto;
     background: #fedd5a;
     border: 2px solid black;
-
 }
-
-
-
 
 footer {
     display: grid;
@@ -128,6 +125,7 @@ footer {
     background: #2f2f2f;
     color: floralwhite;
     padding: 10px;
+    justify-self: end;
 }
 
 footer form {

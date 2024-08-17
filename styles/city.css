@@ -12,15 +12,15 @@ header div {
 }
 
 #bg_SLC {
-    background-image: url("../images/SLC_Skyline.jpg");
+    background-image: url("../images/slc_skyline.jpg");
 }
 
 #bg_Provo {
-    background-image: url("../images/Downtown_Provo.jpg");
+    background-image: url("../images/downtown_provo.jpg");
 }
 
 #bg_Ogden {
-    background-image: url("../images/Ogden_Sign.jpg");
+    background-image: url("../images/ogden_sign.jpg");
 }
 
 .bg {
@@ -46,4 +46,27 @@ header div {
     margin: 0;
     align-self: center;
     justify-self: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /*height: 75%;*/
+}
+
+section {
+    width: 800px !important;
+}
+
+table {
+    margin: 0 auto 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: center;
+    padding: 2px;
 }

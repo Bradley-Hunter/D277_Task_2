@@ -11,10 +11,28 @@ header div {
     justify-self: center;
 }
 
+#bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .motto {
     margin: 0;
     align-self: center;
     justify-self: center;
     width: 115px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: row;
+}
+
+iframe {
+    display: block;
+    border: none;
+    margin: 30px auto;
 }

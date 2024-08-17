@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/same.css">
     <script src="scripts/form.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </head>
 
 <!--
@@ -15,10 +16,14 @@ Resources:
  - https://www.w3schools.com/howto/default.asp (Used for the more complicated design choices)
 -->
 
-<body>
+<!--Using W3Schools Slideshow & Full Page Image How-Tos for making a background slideshow.
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+    https://www.w3schools.com/howto/howto_css_full_page.asp
+-->
+<body id="bg" class="fade" onload="showSlides()">
 <header>
     <div>
-        <img src="images/utahSeal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
+        <img src="images/utah_seal.png" alt="Utah's State Seal"> <!--This vector image was made by Ali Zifan, Public domain, via Wikimedia Commons-->
         <h1 class="title">Utah</h1>
         <h2 id="state-motto"><i>"Industry"</i></h2>
     </div>
@@ -29,7 +34,7 @@ Resources:
 <main>
     <nav>
         <a href="#">Utah</a>
-        <a href="cities/saltLakeCity.html">Salt Lake<br>City</a>
+        <a href="cities/salt_lake_city.html">Salt Lake<br>City</a>
         <div id="dropdown">
             <!--Using https://www.w3schools.com/howto/howto_css_subnav.asp to help make the sub navigation menu-->
             <button class="dropbtn">Cities</button>
@@ -39,17 +44,12 @@ Resources:
             </div>
         </div>
     </nav>
-    <div class="slideshow-container">
-        <!--Using W3Schools Slideshow & Full Page Image How-Tos for making a background slideshow.
-            https://www.w3schools.com/howto/howto_js_slideshow.asp
-            https://www.w3schools.com/howto/howto_css_full_page.asp
-        -->
-
-    </div>
+    <div class="text-content">
     <section>
         <h3>About Utah</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non. Consequat nisl vel pretium lectus quam id leo in. A iaculis at erat pellentesque adipiscing commodo elit at. Tellus pellentesque eu tincidunt tortor aliquam nulla. In est ante in nibh mauris cursus mattis. Vitae semper quis lectus nulla at. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Nullam non nisi est sit amet. Varius morbi enim nunc faucibus a pellentesque sit amet. Sed arcu non odio euismod lacinia at quis risus sed. Elementum integer enim neque volutpat ac tincidunt vitae. Enim sed faucibus turpis in eu mi bibendum. Nisl pretium fusce id velit ut tortor pretium viverra. Imperdiet dui accumsan sit amet nulla facilisi.</p>
     </section>
+
     <aside>
         <h3>Facts</h3>
         <ul>
@@ -60,7 +60,7 @@ Resources:
             <li></li>
         </ul>
     </aside>
-
+    </div>
     <!--Iframe generated from Google Maps-->
     <!--Pinned locations from: https://www.nps.gov/state/ut/index.htm & https://stateparks.utah.gov/parks/?view=list-->
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iaNd_3-LnU8Siloao5QefI13uFuv8-0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
