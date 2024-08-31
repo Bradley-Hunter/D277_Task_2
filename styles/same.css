@@ -104,7 +104,7 @@ nav a:hover {
 
 section {
     width: 600px;
-    margin: 30px 0 30px auto;
+    margin: 30px 15px 30px auto;
     background: #fedd5a;
     border: 2px solid black;
     padding: 5px;
@@ -112,8 +112,9 @@ section {
 }
 aside {
     padding: 5px;
-    margin: 30px auto auto 30px;
+    margin: 30px auto auto 15px;
     width: 250px;
+    float: right;
     background: #fedd5a;
     border: 2px solid black;
 }
